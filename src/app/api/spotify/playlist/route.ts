@@ -4,7 +4,6 @@ import {
   getPlaylistTracks,
   SpotifyPlaylistError,
 } from "@/lib/spotify";
-import fallbackTracks from "@/data/music.json";
 
 export const dynamic = "force-dynamic";
 
@@ -12,26 +11,12 @@ export async function GET() {
   const playlistId = process.env.SPOTIFY_PLAYLIST_ID;
 
   if (!playlistId) {
-    if (fallbackTracks && fallbackTracks.length > 0) {
-      return NextResponse.json({
-        playlistId: "fallback",
-        playlistUri: "spotify:playlist:fallback",
-        tracks: fallbackTracks,
-      });
-    }
     return NextResponse.json({ error: "unavailable" }, { status: 503 });
   }
 
   const accessToken = await getAccessToken();
 
   if (!accessToken) {
-    if (fallbackTracks && fallbackTracks.length > 0) {
-      return NextResponse.json({
-        playlistId: "fallback",
-        playlistUri: "spotify:playlist:fallback",
-        tracks: fallbackTracks,
-      });
-    }
     return NextResponse.json({ error: "unavailable" }, { status: 503 });
   }
 
