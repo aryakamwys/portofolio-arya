@@ -28,5 +28,35 @@
     "previewUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3",
     "spotifyUrl": "https://open.spotify.com/track/61kkS7VjPz2hG4h4rPbbHh",
     "albumImageUrl": "https://i.scdn.co/image/ab67616d0000b273b5a15386f78ea7f85dc9eb3e"
+  },
+  {
+    "id": "lofi-4",
+    "uri": "spotify:track:1YourEyesUri",
+    "name": "Your Eyes",
+    "artists": "Joey Pecoraro",
+    "durationMs": 175000,
+    "previewUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3",
+    "spotifyUrl": "https://open.spotify.com/track/1YourEyesUri",
+    "albumImageUrl": "https://i.scdn.co/image/ab67616d0000b273b5a15386f78ea7f85dc9eb3e"
+  },
+  {
+    "id": "lofi-5",
+    "uri": "spotify:track:2JuneGloomUri",
+    "name": "June Gloom",
+    "artists": "Prima",
+    "durationMs": 150000,
+    "previewUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3",
+    "spotifyUrl": "https://open.spotify.com/track/2JuneGloomUri",
+    "albumImageUrl": "https://i.scdn.co/image/ab67616d0000b273b5a15386f78ea7f85dc9eb3e"
+  },
+  {
+    "id": "lofi-6",
+    "uri": "spotify:track:3BlueberryUri",
+    "name": "blueberry",
+    "artists": "bsd.u",
+    "durationMs": 135000,
+    "previewUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3",
+    "spotifyUrl": "https://open.spotify.com/track/3BlueberryUri",
+    "albumImageUrl": "https://i.scdn.co/image/ab67616d0000b273b5a15386f78ea7f85dc9eb3e"
   }
 ]
