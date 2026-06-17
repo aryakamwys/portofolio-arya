@@ -1,5 +1,12 @@
 [
   {
+    "name": "Lumpat",
+    "description": "Why: Need for an efficient running event management system, especially for accurate timing equipment and live leaderboards.\n\nHow: As CTO, I co-developed a digital ecosystem for event management, handling high traffic and real-time timing integration.\n\nWhat: A comprehensive running events platform that successfully supported 5 large-scale events with 5,000 participants.",
+    "tags": ["Web Architecture", "Event Management"],
+    "year": "2026",
+    "url": "https://lumpat.online/"
+  },
+  {
     "name": "CariProject",
     "description": "Freelance marketplace using Django, PostgreSQL, Docker, and Google Auth. Integrated Midtrans payment gateway and an admin dashboard.",
     "tags": ["Django", "PostgreSQL", "Docker", "OAuth"],
@@ -8,17 +15,17 @@
   },
   {
     "name": "Hawa",
-    "description": "A multilingual real-time weather dashboard with FastAPI, Vite React, Tailwind, and OpenMeteo, including WhatsApp integration for early warnings.",
-    "tags": ["React", "FastAPI", "Tailwind", "PostgreSQL"],
-    "year": "2025",
-    "url": "#"
+    "description": "Why: Need for accessible and inclusive early weather warnings, as part of a youth development program supported by BMKG.\n\nHow: Developed a multilingual real-time weather dashboard using FastAPI, Vite React, Tailwind CSS, and OpenMeteo API, integrating WhatsApp for automated disaster alerts.\n\nWhat: An innovative weather dashboard that led our team to become YDCT finalists and present the project in Singapore.",
+    "tags": ["React", "FastAPI", "Tailwind", "WhatsApp API"],
+    "year": "2026",
+    "url": "https://hawa.blog/"
   },
   {
     "name": "Prenava",
-    "description": "Maternal and child health app with features for communities, shop, and pregnancy tracker. Built with Laravel, React, and Flutter.",
-    "tags": ["Laravel", "MySQL", "React", "Flutter"],
-    "year": "2025",
-    "url": "#"
+    "description": "Why: Concerns about maternal and child health and the lack of a comprehensive app to help pregnant women monitor their daily conditions.\n\nHow: Collaborated on an integrated ecosystem using Laravel (Backend), React (Web), and Flutter (Mobile), implementing Machine Learning for a smart pregnancy tracker.\n\nWhat: A mobile app (released on Play Store) featuring pregnancy monitoring, community forums, and a maternal and child shop.",
+    "tags": ["Laravel", "React", "Flutter", "Machine Learning"],
+    "year": "2026",
+    "url": "https://prenava.id/"
   },
   {
     "name": "SIKAP (Kementerian Agama)",
