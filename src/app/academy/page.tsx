@@ -87,10 +87,10 @@ export default function AcademyPortfolio() {
         return (
           <div className="flex flex-col gap-2 h-full w-full relative">
             <p className="font-mono text-[14px] font-bold border-b-2 border-[var(--color-navy)] mb-2">Mobile App Screens</p>
-            <div className="flex gap-4 flex-1 justify-center items-center min-h-0">
-              <img src="/academy-assets/prenava/Screenshot%202026-06-17%20at%2017.19.54.png" alt="Prenava App 1" className="object-contain bg-white/50 h-full max-h-[220px] border-2 border-[var(--color-navy)] rounded-[2%_98%_3%_97%/97%_3%_98%_2%] shadow-md" />
-              <img src="/academy-assets/prenava/Screenshot%202026-06-17%20at%2017.23.06.png" alt="Prenava App 2" className="object-contain bg-white/50 h-full max-h-[220px] border-2 border-[var(--color-navy)] rounded-[2%_98%_3%_97%/97%_3%_98%_2%] shadow-md" />
-              <img src="/academy-assets/prenava/Screenshot%202026-06-17%20at%2017.25.26.png" alt="Prenava App 3" className="object-contain bg-white/50 h-full max-h-[220px] border-2 border-[var(--color-navy)] rounded-[2%_98%_3%_97%/97%_3%_98%_2%] shadow-md" />
+            <div className="flex gap-4 flex-1 justify-center items-center min-h-0 w-full overflow-hidden">
+              <img src="/academy-assets/prenava/Screenshot%202026-06-17%20at%2017.19.54.png" alt="Prenava App 1" className="object-contain bg-white/50 w-[28%] h-full max-h-[220px] border-2 border-[var(--color-navy)] rounded-[2%_98%_3%_97%/97%_3%_98%_2%] shadow-md" />
+              <img src="/academy-assets/prenava/Screenshot%202026-06-17%20at%2017.23.06.png" alt="Prenava App 2" className="object-contain bg-white/50 w-[44%] h-full max-h-[220px] border-2 border-[var(--color-navy)] rounded-[2%_98%_3%_97%/97%_3%_98%_2%] shadow-md" />
+              <img src="/academy-assets/prenava/Screenshot%202026-06-17%20at%2017.25.26.png" alt="Prenava App 3" className="object-contain bg-white/50 w-[28%] h-full max-h-[220px] border-2 border-[var(--color-navy)] rounded-[2%_98%_3%_97%/97%_3%_98%_2%] shadow-md" />
             </div>
             <div className="mt-2 bg-[var(--color-cream)] border-2 border-[var(--color-navy)] p-3 rounded-[2%_98%_3%_97%/97%_3%_98%_2%] shadow-md text-center relative">
                <Sparkle className="absolute -top-6 -right-4 w-10 h-10 text-[var(--color-accent)] animate-pulse" />
