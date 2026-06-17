@@ -5,11 +5,24 @@ import { Search } from "lucide-react";
 import experiencesData from "@/data/experiences.json";
 import { EXPERIENCES_UI } from "@/data/experiences";
 
+type Experience = {
+  title: string;
+  org: string;
+  link?: string;
+  tag: string;
+  location: string;
+  description: string;
+  date: string;
+  team?: string;
+};
+
+const typedExperiencesData = experiencesData as Experience[];
+
 export default function ExperiencesContent() {
   const [searchQuery, setSearchQuery] = useState("");
   const [activeTab, setActiveTab] = useState("All");
 
-  const filteredResults = experiencesData.filter((exp) => {
+  const filteredResults = typedExperiencesData.filter((exp) => {
     const matchesCategory =
       activeTab === "All" ||
       (activeTab === "Work" && exp.tag === "work") ||
