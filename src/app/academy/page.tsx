@@ -30,9 +30,9 @@ export default function AcademyPortfolio() {
         {projects.map((project, index) => {
           // Parse Why-How-What from description
           const descStr = project.description || "";
-          const whyMatch = descStr.match(/Why:\s*(.*?)(?=\n\nHow:|$)/s);
-          const howMatch = descStr.match(/How:\s*(.*?)(?=\n\nWhat:|$)/s);
-          const whatMatch = descStr.match(/What:\s*(.*?)$/s);
+          const whyMatch = descStr.match(/Why:\s*([\s\S]*?)(?=\n\nHow:|$)/);
+          const howMatch = descStr.match(/How:\s*([\s\S]*?)(?=\n\nWhat:|$)/);
+          const whatMatch = descStr.match(/What:\s*([\s\S]*?)$/);
 
           const why = whyMatch ? whyMatch[1].trim() : "";
           const how = howMatch ? howMatch[1].trim() : "";
