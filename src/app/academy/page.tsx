@@ -205,11 +205,11 @@ export default function AcademyPortfolio() {
                         <span className="font-mono text-sm uppercase">Project {index + 1} of {projects.length}</span>
                       </div>
                       
-                      <div className="font-mono text-[14px] leading-relaxed space-y-3 text-justify">
-                         <p><strong className="bg-[var(--color-navy)] text-[var(--color-canvas)] px-2 py-1 mr-2 inline-block mb-1">Why</strong> {why}</p>
-                         <p><strong className="bg-[var(--color-navy)] text-[var(--color-canvas)] px-2 py-1 mr-2 inline-block mb-1">How</strong> {how}</p>
-                         <p><strong className="bg-[var(--color-navy)] text-[var(--color-canvas)] px-2 py-1 mr-2 inline-block mb-1">What</strong> {what}</p>
-                      </div>
+                      <ul className="font-mono text-[14px] leading-relaxed space-y-3 text-justify list-disc pl-4 marker:text-[var(--color-navy)]">
+                         {why && <li>{why}</li>}
+                         {how && <li>{how}</li>}
+                         {what && <li>{what}</li>}
+                      </ul>
                     </div>
 
                     <div className="flex-1 mt-2 p-1 flex flex-col items-center justify-center min-h-0 overflow-visible">
