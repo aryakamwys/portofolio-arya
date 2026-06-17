@@ -11,24 +11,15 @@ export default function AcademyPortfolio() {
   const projects = projectsData.filter((p) => targetProjects.includes(p.name));
 
   return (
-    <div className="absolute inset-0 z-[100] h-screen w-screen overflow-y-auto bg-white print:h-auto print:w-auto print:overflow-visible font-sans">
-      <div className="mx-auto flex w-full max-w-3xl flex-col bg-gray-100 shadow-2xl print:shadow-none print:max-w-none">
-        {/* Intro Slide */}
-        <section className="flex h-screen flex-col items-center justify-center bg-zinc-900 p-8 text-white print:h-[297mm] print:w-[210mm] print:break-after-page">
-          <h1 className="text-4xl font-bold mb-4 text-center">Portfolio Submission</h1>
-          <h2 className="text-2xl text-gray-300">Apple Developer Academy Indonesia</h2>
-          <div className="mt-12 text-center">
-            <p className="text-lg">Muhammad Arya Kamal</p>
-            <p className="text-gray-400">Telkom University</p>
-            <p className="text-gray-400">aryakaml24@gmail.com</p>
-          </div>
-          <div className="mt-16 border border-gray-600 px-6 py-3 rounded-full text-sm">
-            Press Cmd+P or Ctrl+P to Print/Save as PDF
-          </div>
-        </section>
+    <div className="absolute inset-0 z-[100] h-screen w-screen overflow-y-auto bg-[var(--color-canvas)] text-[var(--color-navy)] print:h-auto print:w-auto print:overflow-visible font-sans">
+      <div className="mx-auto flex w-full flex-col items-center bg-[var(--color-canvas)] pb-20 print:bg-white print:pb-0">
+        
+        {/* Helper for screen only */}
+        <div className="my-8 rounded-none border-2 border-[var(--color-navy)] bg-[var(--color-cream)] px-6 py-3 text-sm font-mono shadow-[4px_4px_0_0_var(--color-navy)] print:hidden">
+          Press Cmd+P or Ctrl+P to Print/Save as PDF (Use Landscape Layout)
+        </div>
 
         {projects.map((project, index) => {
-          // Parse Why-How-What from description
           const descStr = project.description || "";
           const whyMatch = descStr.match(/Why:\s*([\s\S]*?)(?=\n\nHow:|$)/);
           const howMatch = descStr.match(/How:\s*([\s\S]*?)(?=\n\nWhat:|$)/);
@@ -39,126 +30,85 @@ export default function AcademyPortfolio() {
           const what = whatMatch ? whatMatch[1].trim() : descStr;
 
           return (
-            <React.Fragment key={project.name}>
-              {/* Slide 1: Highlight Your Role */}
-              <section className="relative flex h-screen flex-col bg-purple-600 p-8 pt-16 print:h-[297mm] print:w-[210mm] print:break-after-page">
-                <div className="mb-8">
-                  <p className="text-sm font-medium text-purple-100">Apple Developer Academy Indonesia</p>
-                </div>
+            <section 
+              key={project.name} 
+              className="relative flex flex-col justify-between mb-12 w-[1122px] h-[793px] border-2 border-[var(--color-navy)] bg-[var(--color-canvas)] p-12 shadow-[8px_8px_0_0_var(--color-navy)] print:mb-0 print:border-none print:shadow-none print:w-[297mm] print:h-[210mm] print:break-after-page print:p-8"
+            >
+              {/* Header/Main Content Split */}
+              <div className="flex flex-1 gap-12">
                 
-                <div className="mb-6 inline-block rounded-full bg-white/20 px-6 py-2 backdrop-blur-sm self-start">
-                  <h2 className="text-4xl font-bold text-white">Highlight Your Role</h2>
-                </div>
-                <p className="mb-8 max-w-lg text-xl font-medium text-white leading-relaxed">
-                  Group work or individual, explain your contribution clearly. Your goal is to show how you think and build.
-                </p>
-
-                <div className="flex-1 rounded-3xl bg-white/20 p-8 pt-12 backdrop-blur-sm border border-white/30 relative">
-                   <div className="absolute left-10 top-0 bottom-0 w-0.5 bg-white/50"></div>
-                   <div className="space-y-8 pl-8 relative">
-                     <div className="relative">
-                       <div className="absolute -left-10 top-2 h-3 w-3 -translate-x-[5px] rounded-full bg-white shadow-[0_0_0_4px_rgba(168,85,247,0.5)]"></div>
-                       <h3 className="text-xl font-bold text-white">Artwork/Project Title</h3>
-                       <p className="text-purple-100 text-lg italic">{project.name}</p>
-                     </div>
-                     <div className="relative">
-                       <h3 className="text-xl font-bold text-white">Year Accomplished</h3>
-                       <p className="text-purple-100 text-lg italic">{project.year}</p>
-                     </div>
-                     <div className="relative">
-                       <div className="absolute -left-10 top-2 h-3 w-3 -translate-x-[5px] rounded-full bg-white shadow-[0_0_0_4px_rgba(168,85,247,0.5)]"></div>
-                       <h3 className="text-xl font-bold text-white">Role/Position</h3>
-                       <p className="text-purple-100 text-lg italic">
-                          {project.name === "Lumpat" ? "CTO" : "AI & Web Dev Engineer"}
-                       </p>
-                     </div>
-                     <div className="relative">
-                       <h3 className="text-xl font-bold text-white">Publication Link</h3>
-                       <a href={project.url} className="text-purple-100 text-lg italic underline hover:text-white transition">
-                         {project.url}
-                       </a>
-                     </div>
-                   </div>
-                </div>
-                
-                <div className="mt-8 flex justify-center space-x-2">
-                  <span className="text-white/50 font-mono text-sm">Project {index + 1} of {projects.length}</span>
-                </div>
-              </section>
-
-              {/* Slide 2: Tell Your Story Clearly */}
-              <section className="relative flex h-screen flex-col bg-indigo-500 p-8 pt-16 print:h-[297mm] print:w-[210mm] print:break-after-page">
-                <div className="mb-8">
-                  <p className="text-sm font-medium text-indigo-100">Apple Developer Academy Indonesia</p>
-                </div>
-                
-                <div className="mb-6 inline-block rounded-full bg-white/20 px-6 py-2 backdrop-blur-sm self-start">
-                  <h2 className="text-4xl font-bold text-white">Tell Your Story Clearly</h2>
-                </div>
-                <div className="mb-8 max-w-lg text-xl font-medium text-white leading-relaxed space-y-2">
-                  <p>Use this thinking process:</p>
-                  <p className="font-bold text-2xl">Why - How - What</p>
-                  <p className="pt-2 text-lg">Your portfolio is a journey that reflects your expertise. Present it with confidence and clarity.</p>
+                {/* Left Column: Details */}
+                <div className="w-[28%] flex flex-col gap-8">
+                  <div>
+                    <h3 className="font-bold text-xl uppercase tracking-widest border-b-2 border-[var(--color-navy)] pb-2 mb-3">Artwork/Project Title</h3>
+                    <p className="font-mono text-[17px]">{project.name}</p>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-xl uppercase tracking-widest border-b-2 border-[var(--color-navy)] pb-2 mb-3">Year Accomplished</h3>
+                    <p className="font-mono text-[17px]">{project.year}</p>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-xl uppercase tracking-widest border-b-2 border-[var(--color-navy)] pb-2 mb-3">Role/Position</h3>
+                    <p className="font-mono text-[17px]">
+                       {project.name === "Lumpat" ? "CTO" : "AI & Web Dev Engineer"}
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-xl uppercase tracking-widest border-b-2 border-[var(--color-navy)] pb-2 mb-3">Publication Link</h3>
+                    <a href={project.url} className="font-mono text-[17px] underline hover:bg-[var(--color-navy)] hover:text-[var(--color-canvas)] transition-colors break-words">
+                      {project.url}
+                    </a>
+                  </div>
                 </div>
 
-                <div className="flex-1 rounded-3xl bg-white/20 p-8 pt-12 backdrop-blur-sm border border-white/30 relative">
-                   <div className="absolute left-10 top-0 bottom-0 w-0.5 bg-white/50"></div>
-                   <div className="pl-8 relative h-full flex flex-col">
-                     <div className="absolute -left-10 top-2 h-3 w-3 -translate-x-[5px] rounded-full bg-white shadow-[0_0_0_4px_rgba(99,102,241,0.5)]"></div>
-                     <h3 className="text-xl font-bold text-indigo-100 mb-6">Project Description</h3>
-                     
-                     <div className="space-y-6 text-white text-lg overflow-y-auto pr-4 pb-4">
-                       <div>
-                         <strong className="block text-xl text-white mb-1">Why</strong>
-                         <p className="text-indigo-50 leading-relaxed">{why}</p>
-                       </div>
-                       <div>
-                         <strong className="block text-xl text-white mb-1">How</strong>
-                         <p className="text-indigo-50 leading-relaxed">{how}</p>
-                       </div>
-                       <div>
-                         <strong className="block text-xl text-white mb-1">What</strong>
-                         <p className="text-indigo-50 leading-relaxed">{what}</p>
-                       </div>
-                     </div>
-                   </div>
-                </div>
-              </section>
+                {/* Right Column: Description & Media */}
+                <div className="w-[72%] flex flex-col gap-6">
+                  <div>
+                    <div className="flex items-center justify-between border-b-2 border-[var(--color-navy)] pb-2 mb-4">
+                      <h3 className="font-bold text-xl uppercase tracking-widest">Artwork/Project Description</h3>
+                      <span className="font-mono text-sm uppercase">Project {index + 1} of {projects.length}</span>
+                    </div>
+                    
+                    <div className="font-mono text-[15px] leading-relaxed space-y-4 text-justify">
+                       <p><strong className="bg-[var(--color-navy)] text-[var(--color-canvas)] px-2 py-1 mr-2 inline-block mb-1">Why</strong> {why}</p>
+                       <p><strong className="bg-[var(--color-navy)] text-[var(--color-canvas)] px-2 py-1 mr-2 inline-block mb-1">How</strong> {how}</p>
+                       <p><strong className="bg-[var(--color-navy)] text-[var(--color-canvas)] px-2 py-1 mr-2 inline-block mb-1">What</strong> {what}</p>
+                    </div>
+                  </div>
 
-              {/* Slide 3: Work in progress */}
-              <section className="relative flex h-screen flex-col bg-sky-500 p-8 pt-16 print:h-[297mm] print:w-[210mm] print:break-after-page">
-                <div className="mb-8">
-                  <p className="text-sm font-medium text-sky-100">Apple Developer Academy Indonesia</p>
+                  {/* Media Placeholders */}
+                  <div className="flex-1 mt-4 border-2 border-dashed border-[var(--color-navy)] bg-[var(--color-cream)]/30 p-4 flex flex-col items-center justify-center">
+                    <p className="font-mono text-[15px] text-[var(--color-navy)] text-center mb-2 font-bold">
+                       [Insert Project Images / Screenshots Here]
+                    </p>
+                    <p className="font-mono text-[13px] text-[var(--color-navy)]/70 text-center max-w-md">
+                       Add your final UI mockups and work-in-progress drafts here to complete the story.
+                    </p>
+                  </div>
                 </div>
-                
-                <div className="mb-6 inline-block rounded-full bg-white/20 px-6 py-2 backdrop-blur-sm self-start">
-                  <h2 className="text-4xl font-bold text-white">Work in progress</h2>
-                </div>
-                <div className="mb-8 max-w-lg text-xl font-medium text-white leading-relaxed space-y-2">
-                  <p>Show ideas, drafts, and experiments.</p>
-                  <p className="font-bold text-2xl">It doesn't need to be perfect.</p>
-                </div>
+              </div>
 
-                <div className="flex-1 rounded-3xl bg-white/20 p-8 pt-12 backdrop-blur-sm border border-white/30 relative flex flex-col">
-                   <div className="absolute left-10 top-0 bottom-0 w-0.5 bg-white/50"></div>
-                   <div className="pl-8 relative flex-1 flex flex-col">
-                     <div className="absolute -left-10 top-2 h-3 w-3 -translate-x-[5px] rounded-full bg-white shadow-[0_0_0_4px_rgba(14,165,233,0.5)]"></div>
-                     <h3 className="text-xl font-bold text-sky-100 mb-4">Currently, the project is in progress...</h3>
-                     <p className="text-sky-50 leading-relaxed mb-8">
-                       (Insert pictures, screenshots, architectural drafts, terminal outputs, or code snippets here to show your work process for <strong>{project.name}</strong>)
-                     </p>
-                     <div className="flex-1 grid grid-cols-2 gap-4">
-                        <div className="bg-white/10 rounded-2xl border-2 border-dashed border-white/30 flex items-center justify-center">
-                           <span className="text-white/50">Image Placeholder</span>
-                        </div>
-                        <div className="bg-white/10 rounded-2xl border-2 border-dashed border-white/30 flex items-center justify-center">
-                           <span className="text-white/50">Image Placeholder</span>
-                        </div>
-                     </div>
-                   </div>
+              {/* Footer */}
+              <div className="mt-8 pt-6 border-t-2 border-[var(--color-navy)] flex justify-between items-end font-mono text-sm leading-relaxed">
+                <div className="w-[25%] pr-4">
+                  <p className="font-bold mb-1 uppercase text-xs tracking-wider text-[var(--color-navy)]/80">Your name</p>
+                  <p className="font-bold text-[15px]">Muhammad Arya Kamal.</p>
                 </div>
-              </section>
-            </React.Fragment>
+                <div className="w-[35%] pr-4">
+                  <p className="font-bold mb-1 uppercase text-xs tracking-wider text-[var(--color-navy)]/80">Your university/school name</p>
+                  <p className="font-bold">(Student or Alumni)</p>
+                  <p>final-year student at Telkom University</p>
+                </div>
+                <div className="w-[20%] pr-4">
+                  <p className="font-bold mb-1 uppercase text-xs tracking-wider text-[var(--color-navy)]/80">Your contact information</p>
+                  <p>Email: aryakaml24@gmail.com</p>
+                </div>
+                <div className="w-[20%] text-right flex flex-col items-end">
+                  <p className="font-bold mb-1 uppercase text-xs tracking-wider text-[var(--color-navy)]/80">Portfolio Submission for</p>
+                  <p className="font-bold text-[15px] max-w-[150px]">Apple Developer Academy Indonesia</p>
+                </div>
+              </div>
+            </section>
           );
         })}
       </div>
