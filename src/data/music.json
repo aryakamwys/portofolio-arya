@@ -1,22 +1,32 @@
 [
   {
-    "id": "mock-1",
-    "uri": "spotify:track:4cOdK2wGLETKBW3PvgPWqT",
-    "name": "Never Gonna Give You Up",
-    "artists": "Rick Astley",
-    "durationMs": 213573,
-    "previewUrl": "https://p.scdn.co/mp3-preview/22fd20bbbb045d625ab7aa19aeb3b7afeb102d40",
-    "spotifyUrl": "https://open.spotify.com/track/4cOdK2wGLETKBW3PvgPWqT",
-    "albumImageUrl": "https://i.scdn.co/image/ab67616d0000b2735755e164993798e0c9ef7d7a"
+    "id": "lofi-1",
+    "uri": "spotify:track:4cOdK2wGLETKBW3PvgPWqX",
+    "name": "Midnight Study",
+    "artists": "Lofi Girl",
+    "durationMs": 180000,
+    "previewUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+    "spotifyUrl": "https://open.spotify.com/track/4cOdK2wGLETKBW3PvgPWqX",
+    "albumImageUrl": "https://i.scdn.co/image/ab67616d0000b273b5a15386f78ea7f85dc9eb3e"
   },
   {
-    "id": "mock-2",
+    "id": "lofi-2",
     "uri": "spotify:track:51kkS7VjPz2hG4h4rPbbHh",
-    "name": "Lofi Study Session",
+    "name": "Coffee Shop Vibes",
     "artists": "Chillhop Music",
     "durationMs": 140000,
     "previewUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
     "spotifyUrl": "https://open.spotify.com/track/51kkS7VjPz2hG4h4rPbbHh",
+    "albumImageUrl": "https://i.scdn.co/image/ab67616d0000b273b5a15386f78ea7f85dc9eb3e"
+  },
+  {
+    "id": "lofi-3",
+    "uri": "spotify:track:61kkS7VjPz2hG4h4rPbbHh",
+    "name": "Rainy Afternoon",
+    "artists": "Kupla",
+    "durationMs": 160000,
+    "previewUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3",
+    "spotifyUrl": "https://open.spotify.com/track/61kkS7VjPz2hG4h4rPbbHh",
     "albumImageUrl": "https://i.scdn.co/image/ab67616d0000b273b5a15386f78ea7f85dc9eb3e"
   }
 ]
