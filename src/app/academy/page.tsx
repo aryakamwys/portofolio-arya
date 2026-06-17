@@ -220,20 +220,16 @@ export default function AcademyPortfolio() {
 
                 <div className="mt-4 pt-3 border-t-2 border-[var(--color-navy)] flex justify-between items-end font-mono text-sm leading-relaxed shrink-0 relative z-10">
                   <div className="w-[25%] pr-4">
-                    <p className="font-bold mb-1 uppercase text-xs tracking-wider text-[var(--color-navy)]/80">Your name</p>
                     <p className="font-bold text-[14px]">Muhammad Arya Kamal.</p>
                   </div>
                   <div className="w-[35%] pr-4 relative">
                     <Squiggle className="absolute -top-4 right-0 w-16 h-4 text-gray-400 opacity-50" />
-                    <p className="font-bold mb-1 uppercase text-xs tracking-wider text-[var(--color-navy)]/80">Your university/school name</p>
                     <p className="text-[13px]">Final-year student at Telkom University</p>
                   </div>
                   <div className="w-[20%] pr-4">
-                    <p className="font-bold mb-1 uppercase text-xs tracking-wider text-[var(--color-navy)]/80">Your contact information</p>
                     <p className="text-[13px]">Email: aryakaml24@gmail.com</p>
                   </div>
                   <div className="w-[20%] text-right flex flex-col items-end">
-                    <p className="font-bold mb-1 uppercase text-xs tracking-wider text-[var(--color-navy)]/80">Portfolio Submission for</p>
                     <p className="font-bold text-[14px] max-w-[150px]">Apple Developer Academy Indonesia</p>
                   </div>
                 </div>
