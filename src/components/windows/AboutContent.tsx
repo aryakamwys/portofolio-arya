@@ -1,0 +1,127 @@
+"use client";
+
+
+import { ABOUT, ABOUT_LINK_CLASS, type AboutParagraph } from "@/data/about";
+import { useWindowStore, type WindowId } from "@/store/useWindowStore";
+
+export default function AboutContent() {
+
+  const openWindow = useWindowStore((s) => s.openWindow);
+  const focusWindow = useWindowStore((s) => s.focusWindow);
+
+  const handleOpen = (id: WindowId) => {
+    openWindow(id);
+    focusWindow(id);
+  };
+
+  const linkClassName = (cursorClass: string = ABOUT_LINK_CLASS) =>
+    `inline-flex items-baseline border-0 bg-transparent p-0 font-inherit text-inherit font-medium ${cursorClass} decoration-navy/40 underline-offset-4 hover:decoration-navy hover:text-navy hover:underline transition-all duration-200 ease-in-out border-b border-navy/20 hover:border-transparent`;
+
+  const Link = ({
+    children,
+    onClick,
+    href,
+    className = ABOUT_LINK_CLASS,
+  }: {
+    children: React.ReactNode;
+    onClick?: () => void;
+    href?: string;
+    className?: string;
+  }) => {
+    const classes = linkClassName(className);
+
+    if (href) {
+      return (
+        <a
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={classes}
+        >
+          {children}
+        </a>
+      );
+    }
+
+    return (
+      <button type="button" onClick={onClick} className={classes}>
+        {children}
+      </button>
+    );
+  };
+
+  const renderParagraph = (paragraph: AboutParagraph) => {
+    if (paragraph.type === "plain") {
+      return <p>{paragraph.text}</p>;
+    }
+
+    return (
+      <p>
+        {paragraph.parts.map((part, i) => {
+          if ("text" in part) {
+            return <span key={i}>{part.text}</span>;
+          }
+          if ("external" in part) {
+            return (
+              <Link
+                key={i}
+                href={part.external.href}
+                className={part.external.className}
+              >
+                {part.external.label}
+              </Link>
+            );
+          }
+          return (
+            <Link
+              key={i}
+              className={part.window.className}
+              onClick={() => handleOpen(part.window.windowId)}
+            >
+              {part.window.label}
+            </Link>
+          );
+        })}
+      </p>
+    );
+  };
+
+
+
+  return (
+    <div className="flex h-full flex-row gap-4 h-[390px]">
+
+
+      <div className="flex-1 space-y-4 overflow-y-auto pr-2 pb-2 scrollbar-thin scrollbar-thumb-navy/20">
+        <div>
+          <h2 className="text-lg font-semibold tracking-tight">
+            {ABOUT.fullName}
+          </h2>
+          <p className="font-mono text-[11px] text-navy/50">{ABOUT.tagline}</p>
+        </div>
+
+        <div className="border-t border-navy/10 pt-3 text-[13px] leading-relaxed text-navy/70 space-y-3">
+          {ABOUT.paragraphs.map((paragraph, i) => (
+            <div key={i}>{renderParagraph(paragraph)}</div>
+          ))}
+        </div>
+
+        <div className="border-t border-navy/10 pt-3">
+          <div className="font-mono text-[10px] uppercase tracking-widest text-navy/40">
+            Currently Doing
+          </div>
+          <div className="mt-2 flex flex-wrap gap-1.5">
+            {ABOUT.currentlyDoing.map((item) => (
+              <span
+                key={item}
+                className="border border-navy/15 bg-navy/5 px-2 py-0.5 font-mono text-[10px] text-navy/60"
+              >
+                {item}
+              </span>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

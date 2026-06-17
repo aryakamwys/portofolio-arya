@@ -1,0 +1,38 @@
+[
+  {
+    "title": "IT Governance, Risk & Compliance (IT GRC)",
+    "org": "PT Perkom Indah Murni",
+    "link": "#",
+    "tag": "work",
+    "location": "Jakarta, Indonesia",
+    "description": "Managed IT policies and security standards. Conducted IT risk identification and mitigation. Ensured compliance with ISO 27001, ITIL, and security policies.",
+    "date": "Mar 2026 - May 2026"
+  },
+  {
+    "title": "Web Developer",
+    "org": "Government Research and Development",
+    "link": "#",
+    "tag": "work",
+    "location": "Bandung, Indonesia",
+    "description": "Designed and developed SatuDesk website according to user needs.",
+    "date": "Sep 2025 - Oct 2025"
+  },
+  {
+    "title": "Software Engineering Intern",
+    "org": "PT Informatika Media Pratama",
+    "link": "#",
+    "tag": "work",
+    "location": "Jakarta, Indonesia",
+    "description": "Developed Cariproject.com with Google Auth, chat, and Midtrans payment gateway. Improved Web Sikap Kementerian Agama with new features and SonarQube code quality checks.",
+    "date": "Apr 2025 - Aug 2025"
+  },
+  {
+    "title": "IT Support",
+    "org": "Syaamil Group",
+    "link": "#",
+    "tag": "work",
+    "location": "Bandung, Indonesia",
+    "description": "Indexed 600 pages of the Quran using a Web Base for the Qursa Application.",
+    "date": "Jan 2024 - Feb 2024"
+  }
+]
