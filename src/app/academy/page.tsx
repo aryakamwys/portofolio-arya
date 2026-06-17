@@ -187,7 +187,7 @@ export default function AcademyPortfolio() {
                     <div>
                       <h3 className="font-bold text-xl uppercase tracking-widest border-b-2 border-[var(--color-navy)] pb-2 mb-2">Role/Position</h3>
                       <p className="font-mono text-[16px]">
-                         {project.name === "Lumpat" ? "CTO" : project.name === "Competition Maker" ? "Competition Division Coordinator" : "AI & Web Dev Engineer"}
+                         {project.name === "Lumpat" ? "CTO" : project.name === "Competition Maker" ? "Competition Division Coordinator" : project.name === "Prenava" ? "Web & Mobile Dev Fullstack" : "AI & Web Dev Engineer"}
                       </p>
                     </div>
                     <div className="relative">
