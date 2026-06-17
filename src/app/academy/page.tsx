@@ -61,10 +61,10 @@ export default function AcademyPortfolio() {
             <SwirlyArrowDown className="absolute -top-6 -right-6 w-12 h-12 text-[var(--color-accent)] opacity-70 rotate-12" />
             <p className="font-mono text-[14px] font-bold border-b-2 border-[var(--color-navy)] mb-2">Web Previews & On-Site Timing</p>
             <div className="grid grid-cols-2 grid-rows-2 gap-4 flex-1 min-h-0">
-              <img src="/academy-assets/lumpat/Screenshot%202026-06-17%20at%2017.13.14.png" alt="Lumpat Web Preview 1" className="object-contain bg-white/50 w-full h-full border-2 border-[var(--color-navy)] shadow-[4px_4px_0_0_var(--color-navy)]" />
-              <img src="/academy-assets/lumpat/Screenshot%202026-06-17%20at%2017.14.49.png" alt="Lumpat Web Preview 2" className="object-contain bg-white/50 w-full h-full border-2 border-[var(--color-navy)] shadow-[4px_4px_0_0_var(--color-navy)]" />
-              <img src="/academy-assets/lumpat/Screenshot%202026-06-17%20at%2017.14.03%201.png" alt="Lumpat Web Preview 3" className="object-contain bg-white/50 w-full h-full border-2 border-[var(--color-navy)] shadow-[4px_4px_0_0_var(--color-navy)]" />
-              <img src="/academy-assets/lumpat/WhatsApp%20Image%202026-06-12%20at%2021.44.23.jpeg" alt="Lumpat Timing Setup" className="object-contain bg-white/50 w-full h-full border-2 border-[var(--color-navy)] shadow-[4px_4px_0_0_var(--color-navy)]" />
+              <img src="/academy-assets/lumpat/Screenshot%202026-06-17%20at%2017.13.14.png" alt="Lumpat Web Preview 1" className="object-contain bg-white/50 w-full h-full border-2 border-[var(--color-navy)] rounded-[2%_98%_3%_97%/97%_3%_98%_2%] shadow-md" />
+              <img src="/academy-assets/lumpat/Screenshot%202026-06-17%20at%2017.14.49.png" alt="Lumpat Web Preview 2" className="object-contain bg-white/50 w-full h-full border-2 border-[var(--color-navy)] rounded-[2%_98%_3%_97%/97%_3%_98%_2%] shadow-md" />
+              <img src="/academy-assets/lumpat/Screenshot%202026-06-17%20at%2017.14.03%201.png" alt="Lumpat Web Preview 3" className="object-contain bg-white/50 w-full h-full border-2 border-[var(--color-navy)] rounded-[2%_98%_3%_97%/97%_3%_98%_2%] shadow-md" />
+              <img src="/academy-assets/lumpat/WhatsApp%20Image%202026-06-12%20at%2021.44.23.jpeg" alt="Lumpat Timing Setup" className="object-contain bg-white/50 w-full h-full border-2 border-[var(--color-navy)] rounded-[2%_98%_3%_97%/97%_3%_98%_2%] shadow-md" />
             </div>
           </div>
         );
@@ -73,10 +73,10 @@ export default function AcademyPortfolio() {
           <div className="flex flex-col gap-2 h-full w-full relative">
             <p className="font-mono text-[14px] font-bold border-b-2 border-[var(--color-navy)] mb-2">Dashboard & Singapore Showcase</p>
             <div className="grid grid-cols-2 gap-4 flex-1 min-h-0">
-              <img src="/academy-assets/hawa/Screenshot%202026-06-17%20at%2017.16.38.png" alt="Hawa App Preview 1" className="object-contain bg-white/50 w-full h-full border-2 border-[var(--color-navy)] shadow-[4px_4px_0_0_var(--color-navy)]" />
-              <img src="/academy-assets/hawa/Screenshot%202026-06-17%20at%2017.17.45.png" alt="Hawa App Preview 2" className="object-contain bg-white/50 w-full h-full border-2 border-[var(--color-navy)] shadow-[4px_4px_0_0_var(--color-navy)]" />
+              <img src="/academy-assets/hawa/Screenshot%202026-06-17%20at%2017.16.38.png" alt="Hawa App Preview 1" className="object-contain bg-white/50 w-full h-full border-2 border-[var(--color-navy)] rounded-[2%_98%_3%_97%/97%_3%_98%_2%] shadow-md" />
+              <img src="/academy-assets/hawa/Screenshot%202026-06-17%20at%2017.17.45.png" alt="Hawa App Preview 2" className="object-contain bg-white/50 w-full h-full border-2 border-[var(--color-navy)] rounded-[2%_98%_3%_97%/97%_3%_98%_2%] shadow-md" />
             </div>
-            <div className="mt-2 bg-[var(--color-cream)] border-2 border-[var(--color-navy)] p-3 shadow-[4px_4px_0_0_var(--color-navy)] relative">
+            <div className="mt-2 bg-[var(--color-cream)] border-2 border-[var(--color-navy)] p-3 rounded-[2%_98%_3%_97%/97%_3%_98%_2%] shadow-md relative">
                <SmileyFace className="absolute -top-8 -left-4 w-12 h-12 text-yellow-500 -rotate-12" />
                <p className="font-bold text-[14px] leading-tight ml-4">Result: Our team was selected to present the project at the YDCT Global Summit in Singapore! 🇸🇬</p>
                <a href="https://www.linkedin.com/posts/muhammadaryakamal_climatetech-airquality-bandung-activity-7427930531532828672-zuWG?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEPzrBABMwHE4Lo-2hIwqFNUDNQMn1NHGlQ" target="_blank" rel="noreferrer" className="text-blue-600 underline text-xs mt-1 ml-4 inline-block font-mono">View LinkedIn Post ↗</a>
@@ -88,11 +88,11 @@ export default function AcademyPortfolio() {
           <div className="flex flex-col gap-2 h-full w-full relative">
             <p className="font-mono text-[14px] font-bold border-b-2 border-[var(--color-navy)] mb-2">Mobile App Screens</p>
             <div className="flex gap-4 flex-1 justify-center items-center min-h-0">
-              <img src="/academy-assets/prenava/Screenshot%202026-06-17%20at%2017.19.54.png" alt="Prenava App 1" className="object-contain bg-white/50 h-full max-h-[220px] border-2 border-[var(--color-navy)] shadow-[4px_4px_0_0_var(--color-navy)]" />
-              <img src="/academy-assets/prenava/Screenshot%202026-06-17%20at%2017.23.06.png" alt="Prenava App 2" className="object-contain bg-white/50 h-full max-h-[220px] border-2 border-[var(--color-navy)] shadow-[4px_4px_0_0_var(--color-navy)]" />
-              <img src="/academy-assets/prenava/Screenshot%202026-06-17%20at%2017.25.26.png" alt="Prenava App 3" className="object-contain bg-white/50 h-full max-h-[220px] border-2 border-[var(--color-navy)] shadow-[4px_4px_0_0_var(--color-navy)]" />
+              <img src="/academy-assets/prenava/Screenshot%202026-06-17%20at%2017.19.54.png" alt="Prenava App 1" className="object-contain bg-white/50 h-full max-h-[220px] border-2 border-[var(--color-navy)] rounded-[2%_98%_3%_97%/97%_3%_98%_2%] shadow-md" />
+              <img src="/academy-assets/prenava/Screenshot%202026-06-17%20at%2017.23.06.png" alt="Prenava App 2" className="object-contain bg-white/50 h-full max-h-[220px] border-2 border-[var(--color-navy)] rounded-[2%_98%_3%_97%/97%_3%_98%_2%] shadow-md" />
+              <img src="/academy-assets/prenava/Screenshot%202026-06-17%20at%2017.25.26.png" alt="Prenava App 3" className="object-contain bg-white/50 h-full max-h-[220px] border-2 border-[var(--color-navy)] rounded-[2%_98%_3%_97%/97%_3%_98%_2%] shadow-md" />
             </div>
-            <div className="mt-2 bg-[var(--color-cream)] border-2 border-[var(--color-navy)] p-3 shadow-[4px_4px_0_0_var(--color-navy)] text-center relative">
+            <div className="mt-2 bg-[var(--color-cream)] border-2 border-[var(--color-navy)] p-3 rounded-[2%_98%_3%_97%/97%_3%_98%_2%] shadow-md text-center relative">
                <Sparkle className="absolute -top-6 -right-4 w-10 h-10 text-[var(--color-accent)] animate-pulse" />
                <Sparkle className="absolute -bottom-4 -left-4 w-8 h-8 text-yellow-500" />
                <p className="font-bold text-[16px]">The app is already up and available on the Google Playstore!</p>
@@ -104,7 +104,7 @@ export default function AcademyPortfolio() {
           <div className="flex flex-col gap-2 h-full w-full relative">
             <p className="font-mono text-[14px] font-bold border-b-2 border-[var(--color-navy)] mb-2">EISD Hackathon 2025 Highlights</p>
             <div className="flex gap-4 flex-1 min-h-0">
-               <div className="flex-1 bg-[var(--color-cream)] border-2 border-[var(--color-navy)] p-5 shadow-[4px_4px_0_0_var(--color-navy)] flex flex-col justify-center relative">
+               <div className="flex-1 bg-[var(--color-cream)] border-2 border-[var(--color-navy)] p-5 rounded-[2%_98%_3%_97%/97%_3%_98%_2%] shadow-md flex flex-col justify-center relative">
                   <HandDrawnStar className="absolute -top-5 -left-5 w-12 h-12 text-[var(--color-accent)] -rotate-12" />
                   <h4 className="font-bold text-xl mb-1">ESD Laboratory</h4>
                   <p className="text-sm mb-4 border-b border-[var(--color-navy)] pb-2">Competition Division Coordinator (1 yr 2 mos)</p>
@@ -113,10 +113,10 @@ export default function AcademyPortfolio() {
                     <p className="italic text-sm">Created and organized the EISD Hackathon 2025</p>
                   </div>
                </div>
-               <div className="flex-1 border-2 border-[var(--color-navy)] shadow-[4px_4px_0_0_var(--color-navy)] bg-zinc-900 flex items-center justify-center p-2 relative overflow-hidden">
+               <div className="flex-1 border-2 border-[var(--color-navy)] rounded-[2%_98%_3%_97%/97%_3%_98%_2%] shadow-md bg-zinc-900 rounded-2xl flex items-center justify-center p-2 relative overflow-hidden">
                   <div className="text-center z-10 text-white p-4">
                     <p className="mb-3 font-bold text-lg">Hackathon Aftermovie</p>
-                    <a href="https://www.instagram.com/eisdcompetition/reel/DS1gLTBAn-_/" target="_blank" rel="noreferrer" className="inline-block bg-white text-black px-4 py-2 font-bold border-2 border-black hover:bg-gray-200 transition">Watch Reel on Instagram ↗</a>
+                    <a href="https://www.instagram.com/eisdcompetition/reel/DS1gLTBAn-_/" target="_blank" rel="noreferrer" className="inline-block bg-white text-black px-4 py-2 font-bold border-2 border-black/20 hover:bg-gray-200 transition">Watch Reel on Instagram ↗</a>
                   </div>
                   <div className="absolute inset-0 opacity-20 bg-gradient-to-tr from-purple-600 to-orange-500"></div>
                   <SwirlyArrow className="absolute bottom-4 left-4 w-12 h-12 text-white opacity-50 -rotate-45" />
@@ -147,7 +147,7 @@ export default function AcademyPortfolio() {
       <div className="absolute inset-0 z-[100] h-screen w-screen overflow-y-auto bg-[var(--color-canvas)] text-[var(--color-navy)] print:h-auto print:w-auto print:overflow-visible font-sans">
         <div className="mx-auto flex w-full flex-col items-center bg-[var(--color-canvas)] pb-20 print:bg-white print:pb-0">
           
-          <div className="my-8 rounded-none border-2 border-[var(--color-navy)] bg-[var(--color-cream)] px-6 py-3 text-sm font-mono shadow-[4px_4px_0_0_var(--color-navy)] print:hidden flex items-center gap-4">
+          <div className="my-8 rounded-none border-2 border-[var(--color-navy)] bg-[var(--color-cream)] px-6 py-3 text-sm font-mono rounded-[2%_98%_3%_97%/97%_3%_98%_2%] shadow-md print:hidden flex items-center gap-4">
             <span>Press Cmd+P or Ctrl+P to Print/Save as PDF</span>
             <Squiggle className="w-16 h-4 text-[var(--color-accent)]" />
           </div>
@@ -165,7 +165,7 @@ export default function AcademyPortfolio() {
             return (
               <section 
                 key={project.name} 
-                className="relative flex flex-col justify-between mb-12 w-[297mm] h-[210mm] border-2 border-[var(--color-navy)] bg-[var(--color-canvas)] p-12 shadow-[8px_8px_0_0_var(--color-navy)] print:mb-0 print:border-none print:shadow-none print:break-after-page print:p-12 box-border overflow-hidden"
+                className="relative flex flex-col justify-between mb-12 w-[297mm] h-[210mm] border-2 border-[var(--color-navy)] bg-[var(--color-canvas)] p-12 rounded-[1%_99%_2%_98%/98%_2%_99%_1%] shadow-md print:mb-0 print:border-none print:shadow-none print:break-after-page print:p-12 box-border overflow-hidden"
               >
                 {/* Decorative Doodle for each page */}
                 {index === 0 && <HandDrawnStar className="absolute top-6 right-8 w-16 h-16 text-[var(--color-accent)] rotate-12 opacity-80" />}
